@@ -1,0 +1,23 @@
+CORRUPTION:
+  DATASET: challenge
+ANNOTATION_PATH: ./datasets/annotations.json
+MODEL:
+  ADAPTATION: parallel_psedo_contrast
+  ARCH: convnext_clip_para
+  ADAPTATION_TYPE: 'ttda'
+  CONTRAST: 7
+OPTIM:
+  METHOD: SGD
+  STEPS: 1
+  BETA: 0.9
+  LR: 0.0025
+  WD: 0.0
+M_TEACHER:
+  MOMENTUM: 0.999
+COTTA:
+  RST: 0.002
+  AP: 0.05
+TEST:
+  BATCH_SIZE: 64
+  EPOCH: 5
+  USEMEMORY: 10

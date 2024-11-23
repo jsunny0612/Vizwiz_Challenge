@@ -1,0 +1,9 @@
+CHEAKPOINT: /mnt/HDD2/for_submit/CVPR2024-VizWiz-Challenge/output/test-time-evaluation/test/trained_10.pth
+ANNOTATION_PATH: ./datasets/annotations.json
+CORRUPTION:
+  DATASET: challenge
+MODEL:
+  ADAPTATION: parallel_psedo_contrast
+  ARCH: convnext_clip_para
+  ADAPTATION_TYPE: 'ttda'
+  CONTRAST: 7
